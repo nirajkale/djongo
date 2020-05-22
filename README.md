@@ -5,7 +5,7 @@
 <a href="https://badge.fury.io/py/djongo"><img src="https://badge.fury.io/py/djongo.svg" alt="PyPI version" height="18"></a>
 
  ## The only connector that let's you use Django with MongoDB *without* changing the Django ORM
- ### Note: This is forked version of the original package (v 1.2.38) with Jquery upgraded from 3.3.1 to 3.5.1
+ ### Note: This is a forked version of the original package (v 1.2.38) with Jquery upgraded from 3.3.1 to 3.5.1
 
 Use MongoDB as a backend database for your Django project, without changing the Django ORM. Use the Django Admin GUI to add and modify documents in MongoDB. 
 
