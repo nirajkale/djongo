@@ -23,9 +23,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'your-db-name',
-        'CLIENT': {
-           'HOST': 'your-db-host',
-        }
+        'HOST': 'your-db-host',
     }
 }
 ```

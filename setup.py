@@ -3,12 +3,12 @@ from setuptools import find_packages
 import os
 import codecs
 import re
-import sys
 
 LONG_DESCRIPTION = """
 
 Use Mongodb as a backend database for your django project, without changing a
-single django model!
+single django model!  
+Note: This package has been created by forking original djongo repo to upgrade JQuery version from from 3.3.1 to 3.5.1
 
 Usage
 -----
@@ -80,27 +80,23 @@ def find_version(*file_paths):
     raise RuntimeError("Unable to find version string.")
 
 
-install_requires = [
-    'sqlparse==0.2.4',
-    'pymongo>=3.2.0',
-    'django>=2.1,<=3.0.5',
-]
-
-if sys.version_info.major == 3 and sys.version_info.minor < 7:
-    install_requires.append("dataclasses")
-
 setup(
     name='djongo',
     version=find_version("djongo", "__init__.py"),
     include_package_data=True,
     packages=packages,
-    url='https://nesdis.github.io/djongo/',
+    url='https://github.com/nirajkale/djongo',
     license='AGPL',
     author='nesdis',
-    author_email='nesdis@gmail.com',
+    author_email='nirajkale30@gmail.com',
     description=(
         'Driver for allowing Django to use MongoDB as the database backend.'),
-    install_requires=install_requires,
+    install_requires=[
+        'sqlparse==0.2.4',
+        'pymongo>=3.2.0',
+        'django>=2.0',
+        'dataclasses>=0.1',
+    ],
     extras_require=dict(
         json=[
             'jsonfield>=2.0.2',
